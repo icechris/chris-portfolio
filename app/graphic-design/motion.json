@@ -1,36 +1,46 @@
 [
   {
-    "title": "Accurate Pixels \u2014 Event photography",
-    "src": "/videos/motion-0.mp4",
-    "poster": "/videos/motion-0.jpg"
+    "title": "Retill — Connected motion",
+    "src": "/videos/retill-connected-final.mp4",
+    "poster": "/videos/retill-connected-final.jpg"
   },
   {
-    "title": "Retill \u2014 Cinematic product ad",
+    "title": "Currently Offline — Mocktail Mixoff",
+    "src": "/videos/currently-offline-mocktail.mp4",
+    "poster": "/videos/currently-offline-mocktail.jpg"
+  },
+  {
+    "title": "Currently Offline — Adult Field Day",
+    "src": "/videos/currently-offline-field-day.mp4",
+    "poster": "/videos/currently-offline-field-day.jpg"
+  },
+  {
+    "title": "Currently Offline — No Plus One Needed",
+    "src": "/videos/currently-offline-no-plus-one.mp4",
+    "poster": "/videos/currently-offline-no-plus-one.jpg"
+  },
+  {
+    "title": "Currently Offline — Friendship Challenge",
+    "src": "/videos/currently-offline-friendship.mp4",
+    "poster": "/videos/currently-offline-friendship.jpg"
+  },
+  {
+    "title": "Retill — Cinematic product ad",
     "src": "/videos/motion-1.mp4",
     "poster": "/videos/motion-1.jpg"
   },
   {
-    "title": "BodyPride \u2014 Beauty reimagined",
-    "src": "/videos/motion-3.mp4",
-    "poster": "/videos/motion-3.jpg"
-  },
-  {
-    "title": "Retill \u2014 Mobile business management",
+    "title": "Retill — Mobile business management",
     "src": "/videos/motion-4.mp4",
     "poster": "/videos/motion-4.jpg"
   },
   {
-    "title": "Retill \u2014 Vertical social ad",
+    "title": "Retill — Vertical social ad",
     "src": "/videos/motion-5.mp4",
     "poster": "/videos/motion-5.jpg"
   },
   {
-    "title": "Retill \u2014 One view, every branch",
-    "src": "/videos/motion-6.mp4",
-    "poster": "/videos/motion-6.jpg"
-  },
-  {
-    "title": "Retill \u2014 SaaS product explainer",
+    "title": "Retill — SaaS product explainer",
     "src": "/videos/motion-7.mp4",
     "poster": "/videos/motion-7.jpg"
   }

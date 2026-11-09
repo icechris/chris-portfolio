@@ -1,5 +1,27 @@
 [
   {
+    "name": "Currently Offline",
+    "description": "Event flyers and social campaign graphics for Mocktail Mixoff, Adult Field Day and friendship experiences.",
+    "designs": [
+      {
+        "src": "/images/designs/mocktail-mixoff-final.webp",
+        "title": "Mocktail Mixoff"
+      },
+      {
+        "src": "/images/designs/no-plus-one-final.webp",
+        "title": "No Plus One Needed"
+      },
+      {
+        "src": "/images/designs/friendship-challenge-final.webp",
+        "title": "The Friendship Challenge"
+      },
+      {
+        "src": "/images/designs/adult-field-day-final.webp",
+        "title": "Adult Field Day — Every Wednesday"
+      }
+    ]
+  },
+  {
     "name": "Shai Cars",
     "description": "Automotive campaigns, vehicle listings and new-month greetings.",
     "designs": [
