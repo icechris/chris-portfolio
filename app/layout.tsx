@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Christian Duodu | Technology, Marketing & Operations",
-  description: "Christian Kwame Duodu — Technology, Marketing & Operations Professional. Web development, digital systems, SEO, sales and business development, product support and creative content. Based in Kumasi, Ghana.",
+  description: "Christian Kwame Duodu — Technology, Marketing & Operations Professional. Web development, digital systems, SEO, sales and business development, product support and creative content.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
