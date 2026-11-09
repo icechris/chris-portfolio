@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowUpRight, ArrowLeft, ArrowDown, Check, Code2, Monitor, Workflow, TrendingUp, MessageCircle, ExternalLink, Palette, Film } from "lucide-react";
+import { ArrowUpRight, ArrowLeft, ArrowDown, Check, Code2, Monitor, Workflow, TrendingUp, MessageCircle, ExternalLink, Palette, Film, BriefcaseBusiness, ShieldCheck } from "lucide-react";
 import { projects, services } from "../data";
 import ServiceMotion from "../service-motion";
 
@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = services.find(s => s.slug === slug);
   return { title: service ? service.label + " — Christian Duodu" : "Service not found", description: service?.intro };
 }
-const icons = { web: Code2, support: Monitor, automation: Workflow, growth: TrendingUp };
+const icons = { web: Code2, support: Monitor, automation: Workflow, growth: TrendingUp, product: BriefcaseBusiness, security: ShieldCheck };
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = services.find(s => s.slug === slug);
@@ -30,12 +30,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <section className="service-hero">
         <div className="service-breadcrumb"><a href="/">HOME</a><span>/</span><a href="/#expertise">WHAT I DO</a><span>/</span><span>{service.short.toUpperCase()}</span></div>
         <div className="service-hero-grid">
-          <div className="service-hero-copy"><p className="eyebrow">{service.kicker}</p><h1>{service.headline}<br /><em>{service.emphasis}</em></h1><p className="service-lead">{service.intro}</p><div className="service-actions"><a href={enquiry} target="_blank" rel="noreferrer" className="service-primary">Discuss a project <ArrowUpRight size={19} /></a><a href="#service-work" className="service-secondary">Explore the work <ArrowDown size={17} /></a></div></div>
+          <div className="service-hero-copy"><p className="eyebrow">{service.kicker}</p><h1>{service.headline}<br /><em>{service.emphasis}</em></h1><p className="service-lead">{service.intro}</p><div className="service-actions"><a href={enquiry} target="_blank" rel="noreferrer" className="service-primary">{service.visual==="security"?"Discuss an opportunity":"Discuss a project"} <ArrowUpRight size={19} /></a><a href="#service-work" className="service-secondary">Explore the work <ArrowDown size={17} /></a></div></div>
           <div className="service-visual" aria-hidden="true">
             <div className="service-orbit orbit-one" /><div className="service-orbit orbit-two" /><span className="service-visual-coordinate">CHRIS / {service.short.toUpperCase()}</span>
             {service.visual === "web" ? <div className="service-browser"><div className="service-browser-bar"><i /><i /><i /><span>Built for real businesses</span><Code2 size={16} /></div><img src="/images/dansoaa.jpg" alt="" width="1340" height="620" /><div className="service-browser-footer"><span>Design → Development → Experience</span><ArrowUpRight size={18} /></div></div> :
             <div className="service-system"><div className="service-system-top"><Icon size={23}/><span>{service.visual === "support" ? "EVERYDAY SYSTEMS" : service.visual === "automation" ? "A BETTER WORKFLOW" : "A CONNECTED APPROACH"}</span><i /></div>
-              {(service.visual === "support" ? ["POS & product data","Software & connectivity","People & practical support"] : service.visual === "automation" ? ["Capture the information","Connect the workflow","Review the outcome"] : ["Start a conversation","Show the value","Support the customer"]).map((item,i)=><div className="service-system-step" key={item}><span>{String(i+1).padStart(2,"0")}</span><strong>{item}</strong><Check size={16}/></div>)}
+              {(service.visual === "support" ? ["Business software & data","Software & connectivity","People & practical support"] : service.visual === "automation" ? ["Capture the information","Connect the workflow","Review the outcome"] : service.visual==="product" ? ["Onboard & adopt","Support & listen","Coordinate & improve"] : service.visual==="security" ? ["Build awareness","Learn the fundamentals","Continue developing"] : ["Start a conversation","Show the value","Support the customer"]).map((item,i)=><div className="service-system-step" key={item}><span>{String(i+1).padStart(2,"0")}</span><strong>{item}</strong><Check size={16}/></div>)}
               <div className="service-system-bottom"><span>Thoughtful processes. Practical work.</span><Icon size={19}/></div></div>}
             <div className="service-floating-tag"><Icon size={17}/>{service.tags[0]}</div><span className="service-visual-note">BUILT AROUND PEOPLE.</span>
           </div>
@@ -47,8 +47,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="service-capability-grid">{service.capabilities.map(([title,body],i)=><article className="service-capability service-enter" key={title}><span className="service-small-number">0{i+1}</span><h3>{title}</h3><p>{body}</p><ArrowUpRight size={20}/></article>)}</div>
       </section>
       {service.experience && <section className="service-experience service-content service-enter"><div className="service-experience-mark"><Icon size={36}/></div><div><p className="eyebrow">IN PRACTICE</p><h2>{service.experience.name}</h2><span>{service.experience.role}</span><p>{service.experience.body}</p></div><a href={service.slug==="sales-marketing"?"/#about":service.experience.url} className="service-inline-link">More about the experience <ArrowUpRight size={17}/></a></section>}
-      <section className="service-work service-content" id="service-work"><div className="service-work-heading service-enter"><div><p className="eyebrow">02 / RELEVANT WORK</p><h2>From the<br/><em>portfolio.</em></h2></div><p>{service.context}</p></div>
-        <div className="service-projects">{work.map((p,i)=><article className={"service-project service-enter "+(p.image?"with-preview":"")} key={p.name}>
+      <section className="service-work service-content" id="service-work"><div className="service-work-heading service-enter"><div><p className="eyebrow">02 / {work.length?"RELEVANT WORK":"LEARNING & DEVELOPMENT"}</p><h2>{work.length?"From the":"A foundation."}<br/><em>{work.length?"portfolio.":"In progress."}</em></h2></div><p>{service.context}</p></div>
+        {!work.length&&<div className="security-foundation-note"><ShieldCheck size={32}/><div><h3>Learning, then building.</h3><p>My completed training is listed above. As I develop more practical security work, I’ll add clear examples here.</p><a className="service-inline-link" href="/#learning">Explore certifications & ongoing learning <ArrowUpRight size={16}/></a></div></div>}<div className="service-projects">{work.map((p,i)=><article className={"service-project service-enter "+(p.image?"with-preview":"")} key={p.name}>
           {p.image && <a href={p.url} target="_blank" rel="noreferrer" className="service-project-preview" aria-label={"Visit "+p.name+" website"}><img src={p.image} alt={p.name+" website preview"} loading="lazy" width="1340" height="620"/><span>View website <ArrowUpRight size={17}/></span></a>}
           <div className="service-project-body"><div className="service-project-top"><span>{p.sector}</span><span>{String(i+1).padStart(2,"0")}</span></div><h3>{p.name}</h3><p>{p.summary}</p><details><summary>My contribution <span>+</span></summary><ul>{p.duties.map(d=><li key={d}>{d}</li>)}</ul></details>{p.url?<a href={p.url} target={p.url.startsWith("/")?undefined:"_blank"} rel={p.url.startsWith("/")?undefined:"noreferrer"} className="service-inline-link">{p.url.startsWith("/")?"Explore creative work":p.category==="Research"?"View research project":p.category==="Web applications"?"View platform":"Visit website"} <ExternalLink size={15}/></a>:<span className="service-delivery-label">Client support & implementation</span>}</div>
         </article>)}</div>

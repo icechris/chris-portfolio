@@ -98,21 +98,21 @@ export const services = [
     "kicker": "PRACTICAL HELP. WORKING TECHNOLOGY.",
     "headline": "Keep your business",
     "emphasis": "moving.",
-    "intro": "I help businesses set up, organise and troubleshoot the technology they rely on—from POS and product data to websites, connectivity and everyday software.",
+    "intro": "I help businesses set up, organise and troubleshoot the technology they rely on—from business software and structured data to websites, connectivity and everyday applications.",
     "visual": "support",
     "tags": [
-      "POS & inventory",
+      "Business software & systems",
       "Troubleshooting",
-      "Business technology"
+      "Technology support"
     ],
     "capabilities": [
       [
-        "POS implementation",
-        "Support with Retill setup, business onboarding and getting teams comfortable with the system."
+        "Business software implementation",
+        "Support with system setup, configuration and helping teams become comfortable with the software they use."
       ],
       [
-        "Product & inventory data",
-        "Organising products, categories, pricing, quantities and variants for day-to-day retail use."
+        "Business data & information",
+        "Organising and checking information so it is useful, consistent and ready for everyday operations."
       ],
       [
         "Connectivity & equipment",
@@ -216,8 +216,8 @@ export const services = [
     "intro": "I work across B2B sales, customer success, marketing and creative production—helping businesses explain their offer, onboard customers and support them after the first conversation.",
     "visual": "growth",
     "tags": [
-      "Business development",
-      "Digital marketing",
+      "B2B sales & development",
+      "SEO & digital marketing",
       "Customer success"
     ],
     "capabilities": [
@@ -230,8 +230,8 @@ export const services = [
         "Help customers get started, answer product questions and coordinate practical technical support."
       ],
       [
-        "Digital marketing",
-        "Social media management, content planning, campaigns and support for a clearer online presence."
+        "SEO & digital marketing",
+        "Search visibility, website content, social media management, content planning and digital campaigns."
       ],
       [
         "Creative production",
@@ -248,7 +248,7 @@ export const services = [
       "name": "Versified Technology",
       "role": "Marketing Team Lead · Jan 2023–Present",
       "body": "Support Retill users, lead B2B prospecting and product demos, and create marketing, graphic and motion content. Also manage day-to-day Kumasi office operations and IT equipment.",
-      "url": "https://www.versified.com/"
+      "url": "/#about"
     },
     "process": [
       [
@@ -262,6 +262,120 @@ export const services = [
       [
         "Follow through",
         "Support onboarding, resolve questions and keep the relationship moving."
+      ]
+    ]
+  },
+  {
+    "slug": "product-operations",
+    "label": "Product & Operations",
+    "short": "Product & Operations",
+    "kicker": "PEOPLE. PRODUCTS. EVERYDAY PROGRESS.",
+    "headline": "Help people get",
+    "emphasis": "more from products.",
+    "intro": "I connect product support, customer onboarding and day-to-day operations—helping people adopt software, understand its value and get support when they need it.",
+    "visual": "product",
+    "tags": [
+      "Product onboarding & adoption",
+      "Customer feedback",
+      "Business operations"
+    ],
+    "capabilities": [
+      [
+        "Product onboarding & adoption",
+        "Help customers get started with a product, understand relevant features and become comfortable using it."
+      ],
+      [
+        "Customer feedback & insight",
+        "Listen to questions and challenges, clarify what customers need and share useful feedback with the team."
+      ],
+      [
+        "Product support & success",
+        "Demonstrations, practical guidance and troubleshooting throughout the customer relationship."
+      ],
+      [
+        "Business & office operations",
+        "Coordinate daily activities, equipment and practical support so teams can keep work moving."
+      ]
+    ],
+    "projectNames": [
+      "Monic Home & Body Essentials",
+      "Lynxx Kloset",
+      "Pizza Republic"
+    ],
+    "context": "Examples of business-software implementation and hands-on support. Product-specific details belong within each project.",
+    "experience": {
+      "name": "Retill at Versified Technology",
+      "role": "Product support, customer success & Kumasi office operations",
+      "body": "Support Retill users through product demonstrations, onboarding, software assistance and customer feedback. Work also includes B2B prospecting, marketing content and day-to-day Kumasi office operations.",
+      "url": "/#about"
+    },
+    "process": [
+      [
+        "Understand",
+        "Learn how the customer works, what they need and where they are getting stuck."
+      ],
+      [
+        "Enable",
+        "Guide setup and adoption with explanations and practical support."
+      ],
+      [
+        "Improve",
+        "Use feedback and recurring questions to identify opportunities for a better experience."
+      ]
+    ]
+  },
+  {
+    "slug": "cybersecurity",
+    "label": "Cybersecurity Training & Foundations",
+    "short": "Cybersecurity",
+    "kicker": "AWARENESS. UNDERSTANDING. CONTINUED LEARNING.",
+    "headline": "Building a",
+    "emphasis": "security mindset.",
+    "intro": "Cybersecurity is part of my continuing professional development. My foundation combines security training with an interest in systems, networks and how people use technology.",
+    "visual": "security",
+    "tags": [
+      "Security awareness",
+      "Cybersecurity training",
+      "Systems fundamentals"
+    ],
+    "capabilities": [
+      [
+        "Security awareness",
+        "Developing an understanding of common threats and the importance of careful handling of information."
+      ],
+      [
+        "Training & simulation",
+        "Completed the Mastercard Cybersecurity Job Simulation through Forage in 2024."
+      ],
+      [
+        "Systems & networking foundations",
+        "Continuing to build knowledge of operating systems, networking and the security principles connected to them."
+      ],
+      [
+        "Ongoing development",
+        "Building practical understanding through further learning and exercises."
+      ]
+    ],
+    "projectNames": [],
+    "context": "This area reflects training and continued development. It does not imply professional security assessments, penetration testing or specialist cybersecurity client engagements.",
+    "experience": {
+      "name": "Mastercard Cybersecurity Job Simulation",
+      "role": "Forage · 2024 · Training simulation",
+      "body": "Completed a cybersecurity job simulation as part of professional development. This is training experience rather than employment with Mastercard.",
+      "url": "/#learning"
+    },
+    "process": [
+      [
+        "Understand",
+        "Learn security concepts, common risks and the reasons behind protective practices."
+      ],
+      [
+        "Practise",
+        "Reinforce understanding through training activities and exercises."
+      ],
+      [
+        "Develop",
+        "Continue building knowledge and document practical work as experience grows."
       ]
     ]
   }

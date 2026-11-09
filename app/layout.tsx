@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Christian Duodu | Development, Digital Systems & Design",
-  description: "Christian Kwame Duodu's portfolio: websites, web applications, IT support, digital systems, creative work and research. Based in Kumasi, Ghana.",
+  title: "Christian Duodu | Technology, Marketing & Operations",
+  description: "Christian Kwame Duodu — Technology, Marketing & Operations Professional. Web development, digital systems, SEO, sales and business development, product support and creative content. Based in Kumasi, Ghana.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
