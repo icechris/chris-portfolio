@@ -1,6 +1,6 @@
 "use client";
 import { Fragment, useEffect, useRef, useState, type CSSProperties } from "react";
-import { ArrowUpRight, ArrowDown, Code2, TrendingUp, BriefcaseBusiness, Palette, ShieldCheck, Check, Layers, Play, Pause } from "lucide-react";
+import { ArrowUpRight, ArrowDown, Code2, TrendingUp, BriefcaseBusiness, Palette, ShieldCheck, Check, Layers, Play, Pause, Monitor, Workflow } from "lucide-react";
 
 const areas = [
  { id:"technology",label:"Technology & Digital Systems",word:"Build.",intro:"Useful websites. Connected systems. Technology that works for the people using it.",skills:["Web development","IT support","Business software & systems","AI automation"],links:[["Websites & Digital Systems","/services/websites-digital-systems"],["IT & Business Systems","/services/it-support"],["AI Automation","/services/ai-automation"]],icon:Code2 },
@@ -29,14 +29,24 @@ export function ExpertiseShowcase() {
      <div className="expertise-panel-top"><span><area.icon size={17}/>{area.label}</span><span>(0{i+1})</span></div>
      <div className="expertise-panel-body"><div className="expertise-panel-copy"><h3>{area.word}</h3><p>{area.intro}</p><ul>{area.skills.map(skill=><li key={skill}><Check size={13}/>{skill}</li>)}</ul></div>
       <div className={"expertise-art expertise-art-"+area.id} aria-hidden="true">
-       {area.id==="technology"?<><div className="expertise-browser-mini"><div><i/><i/><i/><span>Designed for real life</span></div><img src="/images/dansoaa.jpg" alt="" width="1340" height="620" loading="lazy"/></div><div className="expertise-code-chip"><Code2 size={18}/><span>Idea → Interface → Experience</span></div></>:
+       {area.id==="technology"?<div className="tech-composition">
+         <div className="tech-aura"/><div className="tech-orbit"/>
+         <div className="tech-window tech-window-back"><div className="tech-window-chrome"><span><i/><i/><i/></span><Code2 size={12}/></div><div className="tech-window-page"><span className="tech-micro">DIGITAL EXPERIENCES</span><strong>Made to<br/><em>work better.</em></strong><div className="tech-wireframe"><span/><span/><span/></div><div className="tech-page-button">Explore <ArrowUpRight size={9}/></div></div></div>
+         <div className="tech-app-card"><span className="tech-app-icon"><Monitor size={22}/></span><span>BUSINESS SYSTEMS</span><div className="tech-app-row"><i/><b/><Check size={10}/></div><div className="tech-app-row"><i/><b/><Check size={10}/></div><div className="tech-app-row"><i/><b/><Check size={10}/></div></div>
+         <div className="tech-workflow-card"><div><span className="tech-workflow-symbol"><Workflow size={20}/></span><span><small>CONNECTED WORKFLOWS</small><strong>Less friction. More flow.</strong></span></div><div className="tech-workflow-path"><span/><i/><span/><i/><span/></div></div>
+         <span className="tech-composition-caption">WEB · SYSTEMS · AUTOMATION</span>
+        </div>:
         area.id==="growth"?<><div className="expertise-growth-orbit"/><div className="expertise-growth-type">REACH.<br/>CONNECT.<br/><em>GROW.</em></div><span className="expertise-growth-chip">SEARCH · CONTENT · CONVERSATION</span><TrendingUp className="expertise-growth-arrow" size={65}/></>:
         area.id==="operations"?<><div className="expertise-operation-hub"><Layers size={34}/></div><div className="expertise-operation-node node-a"><span>01</span>Onboard</div><div className="expertise-operation-node node-b"><span>02</span>Support</div><div className="expertise-operation-node node-c"><span>03</span>Improve</div><span className="expertise-operation-line line-a"/><span className="expertise-operation-line line-b"/><span className="expertise-operation-line line-c"/></>:
         area.id==="creative"?<><img className="expertise-art-poster poster-one" src="/images/designs/mocktail-mixoff-final.webp" alt="" width="640" height="800" loading="lazy"/><img className="expertise-art-poster poster-two" src="/images/designs/no-plus-one-final.webp" alt="" width="640" height="800" loading="lazy"/><span className="expertise-play"><Play size={22} fill="currentColor"/></span></>:
         <><div className="expertise-security-grid"/><div className="expertise-shield"><ShieldCheck size={88} strokeWidth={1}/></div><span className="expertise-security-label">AWARENESS → UNDERSTANDING</span></>}
       </div>
      </div>
-     <div className="expertise-panel-links">{area.links.map(([label,url])=><a key={url} href={url}>{label}<ArrowUpRight size={16}/></a>)}</div>
+     <div className="expertise-panel-links">{area.links.map(([label,url])=>{
+       const LinkIcon=url.includes("it-support")?Monitor:url.includes("ai-automation")?Workflow:url.includes("#motion")?Play:area.icon;
+       const detail=({"Websites & Digital Systems":"Interfaces & web applications","IT & Business Systems":"Software, setup & support","AI Automation":"Connected digital workflows","Sales, Marketing & Growth":"Reach, relationships & growth","Product & Operations":"Adoption, feedback & support","Graphic Design":"Explore the creative archive","Motion Room":"Watch the work in motion","Security Training & Foundations":"Awareness & continued learning"} as Record<string,string>)[label];
+       return <a key={url} href={url}><span className="expertise-link-icon"><LinkIcon size={19}/></span><span className="expertise-link-text"><strong>{label}</strong><small>{detail}</small></span><span className="expertise-link-arrow"><ArrowUpRight size={16}/></span></a>;
+     })}</div>
    </article></Fragment>)}</div>
   </div>
   <a href="#work" className="expertise-all-work">Explore the project portfolio <ArrowDown size={17}/></a>
