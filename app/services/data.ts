@@ -184,7 +184,7 @@ export const services = [
       "KidneyRisk CDSS",
       "School Management System"
     ],
-    "context": "Related platform and research work. The procurement project is a frontend prototype with mock data; KidneyRisk CDSS is research software. These are not presented as deployed AI automations for clients.",
+    "context": "Application prototypes and research software exploring workflows and decision support. PSuite Procurement is a frontend prototype with mock data; KidneyRisk CDSS is a research software project.",
     "experience": {
       "name": "Synbizgh / Synbiz Technology",
       "role": "Digital Systems & Business Process Support · 2024–2025",
@@ -302,7 +302,7 @@ export const services = [
       "Lynxx Kloset",
       "Pizza Republic"
     ],
-    "context": "Examples of business-software implementation and hands-on support. Product-specific details belong within each project.",
+    "context": "Hands-on work supporting business software adoption, product information and everyday operations.",
     "experience": {
       "name": "Retill at Versified Technology",
       "role": "Product support, customer success & Kumasi office operations",
@@ -357,11 +357,11 @@ export const services = [
       ]
     ],
     "projectNames": [],
-    "context": "This area reflects training and continued development. It does not imply professional security assessments, penetration testing or specialist cybersecurity client engagements.",
+    "context": "Completed training and continued learning in security awareness, systems and networking fundamentals.",
     "experience": {
       "name": "Mastercard Cybersecurity Job Simulation",
       "role": "Forage · 2024 · Training simulation",
-      "body": "Completed a cybersecurity job simulation as part of professional development. This is training experience rather than employment with Mastercard.",
+      "body": "Completed a cybersecurity job simulation through Forage as part of continuing professional development.",
       "url": "/#learning"
     },
     "process": [
