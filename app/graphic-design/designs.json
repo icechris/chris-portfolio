@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Shai Cars",
+    "description": "Automotive campaigns, vehicle listings and new-month greetings.",
+    "designs": [
+      {
+        "src": "/images/designs/09.webp",
+        "title": "Sell your car with Shai Cars"
+      },
+      {
+        "src": "/images/designs/11.webp",
+        "title": "Time for a change? Sell your car"
+      },
+      {
+        "src": "/images/designs/12.webp",
+        "title": "Your next car starts here"
+      },
+      {
+        "src": "/images/designs/17.webp",
+        "title": "Black-and-yellow speedometer meets silver sedan"
+      },
+      {
+        "src": "/images/designs/21.webp",
+        "title": "Hello October: New Roads with Shai Cars"
+      }
+    ]
+  },
+  {
+    "name": "Dansoaa",
+    "description": "Building materials, interiors and project-led promotional designs.",
+    "designs": [
+      {
+        "src": "/images/designs/02.webp",
+        "title": "Sculptural chrome and marble bathroom"
+      },
+      {
+        "src": "/images/designs/04.webp",
+        "title": "Hello October: Build Something Great"
+      },
+      {
+        "src": "/images/designs/13.webp",
+        "title": "Blueprint to home: build your vision"
+      },
+      {
+        "src": "/images/designs/15.webp",
+        "title": "A Modern Kitchen Beyond the Pages"
+      },
+      {
+        "src": "/images/designs/20.webp",
+        "title": "DANSOAA: Your project starts here"
+      }
+    ]
+  },
+  {
+    "name": "3AN Company",
+    "description": "Car rental, wedding transport and corporate travel campaigns.",
+    "designs": [
+      {
+        "src": "/images/designs/07.webp",
+        "title": "Hello October, drive with 3AN"
+      },
+      {
+        "src": "/images/designs/14.webp",
+        "title": "Hello October, new journeys"
+      },
+      {
+        "src": "/images/designs/16.webp",
+        "title": "Elegant wedding transport in Ghana"
+      },
+      {
+        "src": "/images/designs/18.webp",
+        "title": "Your plans, your ride"
+      },
+      {
+        "src": "/images/designs/22.webp",
+        "title": "Corporate group travel in Ghana"
+      }
+    ]
+  },
+  {
+    "name": "BodyPride",
+    "description": "Beauty and wellness campaign artwork.",
+    "designs": [
+      {
+        "src": "/images/designs/00.webp",
+        "title": "BodyPride October Glow Campaign"
+      },
+      {
+        "src": "/images/designs/01.webp",
+        "title": "BodyPride October Flyer With Website Addition"
+      },
+      {
+        "src": "/images/designs/recent-23.webp",
+        "title": "Body Pride Spa Founder’s Day Celebration"
+      }
+    ]
+  },
+  {
+    "name": "Retill",
+    "description": "Retail software and new-month social media graphics.",
+    "designs": [
+      {
+        "src": "/images/designs/03.webp",
+        "title": "Retill October New Month Flyer"
+      },
+      {
+        "src": "/images/designs/08.webp",
+        "title": "Hello October: Retill new month greeting"
+      },
+      {
+        "src": "/images/designs/19.webp",
+        "title": "October reTill app flyer"
+      },
+      {
+        "src": "/images/designs/recent-00.webp",
+        "title": "01 retill overview"
+      },
+      {
+        "src": "/images/designs/recent-04.webp",
+        "title": "02 retill inventory"
+      },
+      {
+        "src": "/images/designs/recent-05.webp",
+        "title": "Retill App Hero: Retail Made Simple"
+      },
+      {
+        "src": "/images/designs/recent-06.webp",
+        "title": "04 retill analytics"
+      },
+      {
+        "src": "/images/designs/recent-07.webp",
+        "title": "Bold blue Retill app triptych"
+      },
+      {
+        "src": "/images/designs/recent-08.webp",
+        "title": "05 retill ai"
+      },
+      {
+        "src": "/images/designs/recent-10.webp",
+        "title": "Retill five-panel iPhone showcase"
+      },
+      {
+        "src": "/images/designs/recent-11.webp",
+        "title": "03 retill pos sales"
+      },
+      {
+        "src": "/images/designs/recent-13.webp",
+        "title": "Run Your Shop Smarter with Retill"
+      },
+      {
+        "src": "/images/designs/recent-14.webp",
+        "title": "Retill AI Business Insights Poster"
+      },
+      {
+        "src": "/images/designs/recent-16.webp",
+        "title": "Retill: Your Store Goes With You"
+      },
+      {
+        "src": "/images/designs/recent-17.webp",
+        "title": "Retill On The Go: Smarter Retail Management"
+      },
+      {
+        "src": "/images/designs/recent-18.webp",
+        "title": "retill september flyer correct footer"
+      }
+    ]
+  },
+  {
+    "name": "Versified",
+    "description": "Digital business services campaign artwork.",
+    "designs": [
+      {
+        "src": "/images/designs/10.webp",
+        "title": "Versified October 2026 Greeting Flyer"
+      }
+    ]
+  },
+  {
+    "name": "Frimps",
+    "description": "Solar energy and construction campaign graphics.",
+    "designs": [
+      {
+        "src": "/images/designs/05.webp",
+        "title": "October Glow Over Solar Panels"
+      },
+      {
+        "src": "/images/designs/23.webp",
+        "title": "A brighter October 2026"
+      }
+    ]
+  },
+  {
+    "name": "Vina’s Essentials",
+    "description": "Fragrance and lifestyle campaign artwork.",
+    "designs": [
+      {
+        "src": "/images/designs/06.webp",
+        "title": "October perfume greeting from Vina’s Essentials"
+      }
+    ]
+  },
+  {
+    "name": "Pretty Iris Aesthetics",
+    "description": "Seasonal campaigns and beauty brand communication.",
+    "designs": [
+      {
+        "src": "/images/designs/recent-22.webp",
+        "title": "PrettyIris Founders’ Day Celebration(1)"
+      }
+    ]
+  }
+]
