@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { Fragment, useEffect, useRef, useState, type CSSProperties } from "react";
 import { ArrowUpRight, ArrowDown, Code2, TrendingUp, BriefcaseBusiness, Palette, ShieldCheck, Check, Layers, Play, Pause } from "lucide-react";
 
 const areas = [
@@ -25,7 +25,7 @@ export function ExpertiseShowcase() {
     <nav aria-label="Expertise areas" className="expertise-index">{areas.map((area,i)=><a key={area.id} href={"#expertise-"+area.id} aria-current={active===i?"location":undefined} className={active===i?"selected":""}><span>0{i+1}</span>{area.label}<ArrowUpRight size={14}/></a>)}</nav>
     <span className="expertise-scroll-hint"><ArrowDown size={15}/> SCROLL TO EXPLORE</span>
    </div>
-   <div className="expertise-panels">{areas.map((area,i)=><article id={"expertise-"+area.id} className={"expertise-panel expertise-panel-"+area.id} style={{"--panel-index":i} as CSSProperties} key={area.id}>
+   <div className="expertise-panels">{areas.map((area,i)=><Fragment key={area.id}><span id={"expertise-"+area.id} className="expertise-panel-anchor" aria-hidden="true"/><article className={"expertise-panel expertise-panel-"+area.id} style={{"--panel-index":i} as CSSProperties} key={area.id}>
      <div className="expertise-panel-top"><span><area.icon size={17}/>{area.label}</span><span>(0{i+1})</span></div>
      <div className="expertise-panel-body"><div className="expertise-panel-copy"><h3>{area.word}</h3><p>{area.intro}</p><ul>{area.skills.map(skill=><li key={skill}><Check size={13}/>{skill}</li>)}</ul></div>
       <div className={"expertise-art expertise-art-"+area.id} aria-hidden="true">
@@ -37,7 +37,7 @@ export function ExpertiseShowcase() {
       </div>
      </div>
      <div className="expertise-panel-links">{area.links.map(([label,url])=><a key={url} href={url}>{label}<ArrowUpRight size={16}/></a>)}</div>
-   </article>)}</div>
+   </article></Fragment>)}</div>
   </div>
   <a href="#work" className="expertise-all-work">Explore the project portfolio <ArrowDown size={17}/></a>
  </section>;
