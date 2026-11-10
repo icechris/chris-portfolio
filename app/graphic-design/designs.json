@@ -114,6 +114,26 @@
       {
         "src": "/images/designs/recent-23.webp",
         "title": "Body Pride Spa Founder’s Day Celebration"
+      },
+      {
+        "src": "/images/designs/bodypride-make-yourself-priority.webp",
+        "title": "Make Yourself a Priority"
+      },
+      {
+        "src": "/images/designs/bodypride-skin-beautifully-cared.webp",
+        "title": "Your Skin, Beautifully Cared For"
+      },
+      {
+        "src": "/images/designs/bodypride-chemical-peel-fresh-start.webp",
+        "title": "Chemical Peel — Give Your Skin a Fresh Start"
+      },
+      {
+        "src": "/images/designs/bodypride-pink-october-stronger-you.webp",
+        "title": "Pink October — A Stronger You"
+      },
+      {
+        "src": "/images/designs/bodypride-fresh-start-your-skin.webp",
+        "title": "A Fresh Start for Your Skin"
       }
     ]
   },
@@ -164,6 +184,10 @@
       {
         "src": "/images/designs/retill-smarter-move.webp",
         "title": "The Smarter Move Is Retill"
+      },
+      {
+        "src": "/images/designs/retill-make-your-move.webp",
+        "title": "Make Your Move"
       }
     ]
   },
@@ -230,6 +254,20 @@
       {
         "src": "/images/designs/silicon-comfort-hospitality.webp",
         "title": "Where Comfort Meets Hospitality"
+      }
+    ]
+  },
+  {
+    "name": "Product Visuals",
+    "description": "Skincare and fragrance product compositions and promotional visual design.",
+    "designs": [
+      {
+        "src": "/images/designs/solinotes-beach-fragrance.webp",
+        "title": "Solinotes — Beach Fragrance Visual"
+      },
+      {
+        "src": "/images/designs/sensitive-skin-summer-routine.webp",
+        "title": "Sensitive Skin — Summer Routine"
       }
     ]
   }
