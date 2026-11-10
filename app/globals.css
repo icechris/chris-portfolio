@@ -219,3 +219,9 @@
 .tech-app-row{padding:5px 0}
 .tech-workflow-card{padding:12px 14px 10px}
 }
+
+/* Only the photographed person animates; the surrounding frame stays fixed. */
+.living-portrait .portrait{position:relative}
+.living-portrait-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;pointer-events:none}
+.living-portrait-control{position:absolute;top:15px;right:15px;z-index:2;display:grid;place-items:center;width:32px;height:32px;border:1px solid #ffffff66;border-radius:50%;background:#09253766;backdrop-filter:blur(12px);color:white}
+@media(prefers-reduced-motion:reduce){.living-portrait-canvas,.living-portrait-control{display:none}}
