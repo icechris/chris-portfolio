@@ -219,28 +219,3 @@
 .tech-app-row{padding:5px 0}
 .tech-workflow-card{padding:12px 14px 10px}
 }
-
-/* Real photograph: camera motion without altering facial features. */
-.motion-portrait{--portrait-rx:0deg;--portrait-ry:0deg;perspective:1200px;padding:14px 8px 0;isolation:isolate}
-.motion-portrait-float{position:relative;transform-origin:center 60%;animation:portrait-drift 9s ease-in-out infinite}
-.motion-portrait-card{height:535px;position:relative;overflow:hidden;border-radius:160px 160px 24px 24px;transform:rotateX(var(--portrait-rx)) rotateY(var(--portrait-ry));transition:transform .65s cubic-bezier(.2,.8,.2,1);background:#1b3940;border:1px solid #c6e9f568;box-shadow:0 24px 65px #001d3540,inset 0 1px #fff8;isolation:isolate}
-.motion-portrait-photo{position:absolute;inset:0;overflow:hidden}
-.motion-portrait-photo img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 28%;transform-origin:55% 30%;animation:portrait-camera 16s ease-in-out infinite}
-.motion-portrait-shade{position:absolute;inset:0;background:linear-gradient(180deg,#061e3222 0%,transparent 35%,#061e3222 60%,#061e32dc 100%);pointer-events:none}
-.motion-portrait-kicker{position:absolute;left:25px;right:25px;top:30px;text-align:center;font-size:8px;font-weight:600;letter-spacing:2.3px;color:#fff;text-shadow:0 1px 8px #001c33}
-.motion-portrait-signature{position:absolute;bottom:27px;left:27px;color:#fff;pointer-events:none}
-.motion-portrait-signature>span{display:block;font-size:12px;color:#d5e9f0;margin-bottom:1px}
-.motion-portrait-signature>strong{display:flex;align-items:center;gap:12px;font-family:Georgia,serif;font-size:clamp(32px,3.5vw,49px);font-style:italic;font-weight:400;line-height:1.2;letter-spacing:-1.5px}
-.motion-portrait-signature>strong>span{font-family:Arial,sans-serif;font-size:21px;font-style:normal;color:#8dd9f8;animation:portrait-star 14s linear infinite}
-.motion-portrait-toggle{position:absolute;bottom:29px;right:21px;display:grid;place-items:center;width:35px;height:35px;border:1px solid #e1f5ff66;border-radius:50%;background:#ffffff1c;color:#fff;backdrop-filter:blur(12px);transition:background .2s}
-.motion-portrait-toggle:hover{background:#ffffff40}
-.motion-portrait-caption{position:relative;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:23px 13px 16px;font-size:10px;letter-spacing:.1px;color:#a9d6e9}
-.motion-portrait-caption>svg{color:#8bceec}
-.motion-portrait[data-still=true] .motion-portrait-float,.motion-portrait[data-still=true] .motion-portrait-photo img,.motion-portrait[data-still=true] .motion-portrait-signature>strong>span{animation-play-state:paused}
-.motion-portrait[data-still=true] .motion-portrait-card{transform:none}
-@keyframes portrait-drift{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-9px) rotate(.6deg)}}
-@keyframes portrait-camera{0%,100%{transform:scale(1.035) translate(0,0)}50%{transform:scale(1.09) translate(-.6%,.6%)}}
-@keyframes portrait-star{to{transform:rotate(360deg)}}
-@media(max-width:1100px) and (min-width:761px){.motion-portrait-card{height:470px;border-radius:120px 120px 22px 22px}.motion-portrait-signature{left:21px}.motion-portrait-signature>strong{font-size:34px}}
-@media(max-width:760px){.motion-portrait{padding:14px 7px 0;max-width:410px}.motion-portrait-card{height:auto;aspect-ratio:.83;border-radius:145px 145px 24px 24px}.motion-portrait-signature>strong{font-size:44px}.motion-portrait-caption{padding:21px 12px 13px;font-size:10px}}
-@media(prefers-reduced-motion:reduce){.motion-portrait-float,.motion-portrait-photo img,.motion-portrait-signature>strong>span{animation:none!important}.motion-portrait-card{transform:none!important;transition:none}.motion-portrait-photo img{transform:scale(1.035)}.motion-portrait-toggle{display:none}}
