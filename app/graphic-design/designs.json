@@ -119,7 +119,7 @@
   },
   {
     "name": "Retill",
-    "description": "Retail software and new-month social media graphics.",
+    "description": "Retail software campaigns, product storytelling and social media graphics.",
     "designs": [
       {
         "src": "/images/designs/03.webp",
@@ -144,16 +144,44 @@
       {
         "src": "/images/designs/recent-18.webp",
         "title": "retill september flyer correct footer"
+      },
+      {
+        "src": "/images/designs/retill-every-sale.webp",
+        "title": "Every Sale Records Itself"
+      },
+      {
+        "src": "/images/designs/retill-multiple-shops.webp",
+        "title": "Multiple Shops. One Clear View."
+      },
+      {
+        "src": "/images/designs/retill-your-stock-sales-shop.webp",
+        "title": "Your Stock. Your Sales. Your Shop."
+      },
+      {
+        "src": "/images/designs/retill-work-smart.webp",
+        "title": "Work Smart. Sell Easy."
+      },
+      {
+        "src": "/images/designs/retill-smarter-move.webp",
+        "title": "The Smarter Move Is Retill"
       }
     ]
   },
   {
     "name": "Versified",
-    "description": "Digital business services campaign artwork.",
+    "description": "Technology services, laptop repair and digital business campaign artwork.",
     "designs": [
       {
         "src": "/images/designs/10.webp",
         "title": "Versified October 2026 Greeting Flyer"
+      },
+      {
+        "src": "/images/designs/versified-guesswork.webp",
+        "title": "Guesswork Belongs Elsewhere"
+      },
+      {
+        "src": "/images/designs/versified-safe-hands.webp",
+        "title": "Your Laptop Is in Safe Hands"
       }
     ]
   },
@@ -188,6 +216,20 @@
       {
         "src": "/images/designs/recent-22.webp",
         "title": "PrettyIris Founders’ Day Celebration(1)"
+      }
+    ]
+  },
+  {
+    "name": "Silicon Hotel",
+    "description": "Hospitality campaign graphics showcasing accommodation and the hotel experience.",
+    "designs": [
+      {
+        "src": "/images/designs/silicon-comfortable-stay.webp",
+        "title": "Your Comfortable Stay Awaits"
+      },
+      {
+        "src": "/images/designs/silicon-comfort-hospitality.webp",
+        "title": "Where Comfort Meets Hospitality"
       }
     ]
   }
