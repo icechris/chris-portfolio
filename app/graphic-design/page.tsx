@@ -2,6 +2,7 @@
 import {useEffect,useRef,useState} from "react";
 import type {CSSProperties,PointerEvent} from "react";
 import {ArrowUp,X,ChevronLeft,ChevronRight,Palette,Play,FolderOpen,Images,Film,Plus} from "lucide-react";
+import ServicesDropdown from "@/components/services-dropdown";
 import groups from "./designs.json";
 import motion from "./motion.json";
 type Design={src:string;title:string};
@@ -37,7 +38,7 @@ export default function GraphicDesign(){
  const navigateFolder=(direction:number)=>setCollection(current=>current===null?0:(current+direction+groups.length)%groups.length);
  const group=collection===null?null:groups[collection];
  return <div className="design-page">
- <header className="design-nav"><a className="design-logo" href="/">chris<span>✦</span></a><nav aria-label="Design navigation"><a href="/">Portfolio</a><a href="#gallery">Gallery</a><a href="#motion">Motion</a><a href="https://wa.me/233554453553">Contact me</a></nav></header>
+ <header className="design-nav"><a className="design-logo" href="/">chris<span>✦</span></a><nav aria-label="Design navigation"><a href="/">Portfolio</a><a href="#gallery">Gallery</a><a href="#motion">Motion</a><ServicesDropdown/><a href="https://wa.me/233554453553">Contact me</a></nav></header>
  <main>
  <section className="design-hero"><div className="design-hero-copy"><p className="eyebrow">CHRISTIAN DUODU / GRAPHIC DESIGN</p><h1>Business<br/><span>Social Media.</span></h1><p>Campaigns, brand graphics and visual stories for the businesses I work with.</p><a className="design-cta" href="#gallery">Explore the gallery <Palette size={18}/></a></div><div className="design-portrait"><img src="/images/christian-suit.jpg" alt="Christian Duodu in a navy suit"/><span>IDEAS INTO<br/>IMAGES.</span></div><span className="design-script" aria-hidden="true">Christian</span></section>
  <section className="design-featured" aria-label="Featured business designs">{[21,20,19,7,0].map(i=>{const design=all.find(d=>d.src.endsWith(String(i).padStart(2,"0")+".webp"))!;return <button key={i} onClick={()=>setSelected(design)} aria-label={"View "+design.title}><img src={design.src} alt={design.title}/></button>})}</section>

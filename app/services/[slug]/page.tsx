@@ -1,3 +1,4 @@
+import ServicesDropdown from "@/components/services-dropdown";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, ArrowLeft, ArrowDown, Check, Code2, Monitor, Workflow, TrendingUp, MessageCircle, ExternalLink, Palette, Film, BriefcaseBusiness, ShieldCheck } from "lucide-react";
@@ -24,7 +25,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     <a href="#service-main" className="skip-link">Skip to content</a>
     <header className="service-header">
       <a href="/" className="wordmark" aria-label="Christian Duodu home">chris<span>✦</span><i /></a>
-      <a href="/#expertise" className="service-back"><ArrowLeft size={16} /> All expertise</a>
+      <nav className="service-nav-links" aria-label="Services navigation"><a href="/#expertise" className="service-back"><ArrowLeft size={16} /> All expertise</a><ServicesDropdown/></nav>
       <a href={enquiry} target="_blank" rel="noreferrer" className="service-header-cta">Let’s talk <ArrowUpRight size={17} /></a>
     </header>
     <main id="service-main">

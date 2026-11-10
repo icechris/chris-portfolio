@@ -239,3 +239,32 @@
 .living-portrait[data-motion-enabled=true][data-paused=true] .living-photo-head{animation-play-state:paused!important}
 .living-portrait[data-motion-enabled=true][data-paused=true] .living-photo-eyelids{animation:none!important;opacity:0}
 }
+
+/* Shared services navigation: click/tap, keyboard, Escape and outside-click. */
+.nav-services{position:relative;font-size:14px;line-height:1.5;text-align:left}
+.nav-services-trigger{display:flex;align-items:center;justify-content:center;gap:8px;border:0;padding:0;background:transparent;color:inherit;font:inherit;white-space:nowrap;min-height:30px}
+.nav-services-trigger:hover,.nav-services-trigger[aria-expanded=true]{color:#8dd9fb}
+.nav-services-trigger>svg{transition:transform .25s}.nav-services-trigger>svg.is-open{transform:rotate(180deg)}
+.nav-services-panel{position:absolute;right:-16px;top:calc(100% + 19px);width:min(620px,calc(100vw - 40px));padding:24px;color:#d9effb;background:linear-gradient(135deg,#102f42f7,#061e30fc);border:1px solid #a1d9f340;border-radius:22px;box-shadow:0 24px 65px #00121f66,inset 0 1px #ffffff15;backdrop-filter:blur(28px);z-index:60;max-height:calc(100dvh - 120px);overflow-y:auto;overscroll-behavior:contain}
+.nav-services-panel[hidden]{display:none}
+.nav-services-intro{padding:0 4px 18px;border-bottom:1px solid #a8d9f01c;margin-bottom:12px}
+.nav-services-intro>span{font-size:8px;letter-spacing:2px;color:#89b6ce}.nav-services-intro>p{font-size:12px;color:#accddd;margin-top:7px}
+.nav-services-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.nav-services .nav-service-link{display:flex;align-items:center;gap:11px;border:1px solid transparent;border-radius:12px;padding:13px 10px;color:#deeff8;transition:background .2s,border-color .2s}
+.nav-services .nav-service-link:hover,.nav-services .nav-service-link:focus-visible{background:#98d8f514;border-color:#a7def62b;color:white}
+.nav-service-icon{width:35px;height:35px;border:1px solid #9bcee32b;background:#99dcff0c;border-radius:10px;display:grid;place-items:center;flex-shrink:0;color:#94d5f5}
+.nav-service-link>span:nth-child(2){min-width:0;flex:1}.nav-service-link strong{display:block;font-size:11px;font-weight:500;line-height:1.5}.nav-service-link small{display:block;font-size:9px;color:#91b0c4;margin-top:4px;line-height:1.55}.nav-service-link>svg{color:#6e9fbb}
+.nav-services .nav-services-overview{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:14px;border-top:1px solid #a8d9f026;padding:17px 4px 0;color:#9bdcfb;font-size:11px}
+.service-nav-links{display:flex;align-items:center;gap:30px}.service-nav-links .nav-services-panel{right:50%;transform:translateX(50%)}
+.design-nav{z-index:35}.design-nav nav{align-items:center}
+@media(prefers-reduced-motion:no-preference){.nav-services-panel:not([hidden]){animation:services-nav-enter .22s ease-out}@keyframes services-nav-enter{from{opacity:0;translate:0 -6px}to{opacity:1;translate:0 0}}}
+@media(max-width:760px){
+.mobile-menu{max-height:calc(100dvh - 140px);overflow-y:auto;overscroll-behavior:contain}
+.nav-services-mobile{border-bottom:1px solid #ffffff20}.nav-services-mobile .nav-services-trigger{width:100%;justify-content:space-between;padding:14px 0;font-size:16px}
+.nav-services-mobile .nav-services-panel{position:static;width:100%;padding:15px 10px 10px;max-height:none;box-shadow:none;border-radius:14px;margin:0 0 14px;overflow:visible}
+.nav-services-mobile .nav-services-grid{grid-template-columns:1fr}.mobile-menu .nav-service-link{padding:11px 6px;border:1px solid transparent}.mobile-menu .nav-services-overview{padding:15px 4px 4px;border-bottom:0}
+.service-nav-links{gap:10px}.service-nav-links>.service-back{display:none}.service-nav-links .nav-services-trigger{font-size:11px;gap:5px}
+.service-nav-links .nav-services-panel{position:fixed;left:12px;right:12px;top:80px;width:auto;transform:none;max-height:calc(100dvh - 100px)}
+.nav-services-grid{grid-template-columns:1fr}.nav-services-panel{padding:18px;width:min(360px,calc(100vw - 24px))}
+.design-nav nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.design-nav .nav-services-trigger{font-size:12px}.design-nav .nav-services-panel{right:-6px}
+}
