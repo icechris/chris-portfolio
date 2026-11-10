@@ -49,7 +49,7 @@ export default function LivingPortrait() {
       if(visible&&!document.hidden)draw?.(elapsed,paused||media.matches);
       frame=requestAnimationFrame(tick);
     }
-    function ready() { if(++loaded!==2||cancelled)return; draw=setupLivingPortrait(surface,original,closed);draw(0,true);frame=requestAnimationFrame(tick); }
+    function ready() { if(++loaded!==2||cancelled)return; draw=setupLivingPortrait(surface!,original,closed);draw(0,true);frame=requestAnimationFrame(tick); }
     original.onload=ready;closed.onload=ready;
     original.src="/images/christian-suit.jpg";closed.src="/images/christian-blink-frame.webp";
     const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;last=0;});
