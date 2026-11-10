@@ -19,6 +19,26 @@ export function ExpertiseShowcase() {
   window.addEventListener("scroll",scroll,{passive:true});update();
   return()=>{window.removeEventListener("scroll",scroll);cancelAnimationFrame(frame);};
  },[]);
+ useEffect(()=>{
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const section=root.current;
+  if(!section)return;
+  const panels=Array.from(section.querySelectorAll<HTMLElement>(".expertise-panel"));
+  const measure=()=>{
+   const tallest=Math.max(0,...panels.map(panel=>panel.getBoundingClientRect().height));
+   const header=document.querySelector(".header")?.getBoundingClientRect().height??88;
+   const dock=document.querySelector(".bottom-nav");
+   const dockHeight=dock&&getComputedStyle(dock).display!=="none"?dock.getBoundingClientRect().height:0;
+   const clearance=Math.max(20,dockHeight+12);
+   const start=Math.min(header+24,window.innerHeight-tallest-clearance-(panels.length-1)*8);
+   section.style.setProperty("--expertise-stack-start",start+"px");
+  };
+  const resize=new ResizeObserver(measure);
+  panels.forEach(panel=>resize.observe(panel));
+  window.addEventListener("resize",measure,{passive:true});
+  measure();
+  return()=>{resize.disconnect();window.removeEventListener("resize",measure);section.style.removeProperty("--expertise-stack-start");};
+ },[]);
  return <section id="expertise" className="expertise-studio section-anchor" ref={root}>
   <div className="expertise-studio-layout">
    <div className="expertise-studio-aside"><p className="eyebrow"><span/> MY EXPERTISE</p><h2>what<br/><em>I do.</em></h2><p className="expertise-aside-copy">Different skills.<br/>One connected approach.</p>
