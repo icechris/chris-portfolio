@@ -3,7 +3,7 @@ import { useState, type CSSProperties } from "react";
 import { ArrowUpRight, ArrowDown, Search, Layers, X, Palette } from "lucide-react";
 import { projects, type Project } from "@/app/services/data";
 const categories=["All work","Client websites","Web applications","Creative campaigns","Technical support","Research"];
-const featuredNames=["Junk Titanic","Dansoaa","Currently Offline","BodyPride MedSpa","Lynxx Kloset","PSuite Procurement"];
+const featuredNames=["Junk Titanic","Silicon Hotel & Conference Centre","Dansoaa","Currently Offline","BodyPride MedSpa","Lynxx Kloset","PSuite Procurement"];
 function WorkCover({project,compact=false}:{project:Project;compact?:boolean}){
  const image=project.image||(project.name==="Currently Offline"?"/images/designs/mocktail-mixoff-final.webp":undefined);
  return <div className={"folio-cover"+(image?" folio-image":" folio-type")+(compact?" folio-cover-compact":"")} style={{"--project-color":project.color} as CSSProperties}>

@@ -74,7 +74,7 @@ export function ExpertiseShowcase() {
 }
 
 const brandRows = [
- [["Currently Offline","CO","/graphic-design#currently-offline"],["Junk Titanic","JT","https://www.junktitanic.co.uk/"],["Versified","V","/#about"],["Shai Cars","SC","https://www.shaicars.com"],["Dansoaa","D","https://dansoaa.com"],["3AN Company","3A","https://threeancompany.com"],["Lynxx Kloset","LK","https://lynxxkloset.vercel.app/"],["BodyPride","BP","https://www.bodypridemedspagh.com"],["Chrisango Africa","CA","https://chrisangoafrica.com/"],["MatchGigs","MG","https://matchgigs.co"],["CourseRep","CR","https://courserep.academy"]],
+ [["Silicon Hotel","SH","https://www.siliconhotelcc.com/"],["Currently Offline","CO","/graphic-design#currently-offline"],["Junk Titanic","JT","https://www.junktitanic.co.uk/"],["Versified","V","/#about"],["Shai Cars","SC","https://www.shaicars.com"],["Dansoaa","D","https://dansoaa.com"],["3AN Company","3A","https://threeancompany.com"],["Lynxx Kloset","LK","https://lynxxkloset.vercel.app/"],["BodyPride","BP","https://www.bodypridemedspagh.com"],["Chrisango Africa","CA","https://chrisangoafrica.com/"],["MatchGigs","MG","https://matchgigs.co"],["CourseRep","CR","https://courserep.academy"]],
  [["Pretty Iris","PI","/#work"],["Accurate Edu","AE","https://accurate-edu.vercel.app"],["Solvia","S","https://solviaglobal.vercel.app"],["Staphmust","SE","https://staphmustengltd.com/"],["CareGh","CG","https://care-gh.vercel.app/"],["Akoma Learning","AK","https://hybrid-ai-roan.vercel.app/"],["Monic Essentials","ME","/#work"]]
 ];
 export function ClientRibbon(){

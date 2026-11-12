@@ -16,6 +16,68 @@ export const projects:Project[]=[
     "short": "Rubbish gone. Space back."
   },
   {
+    "name": "Silicon Hotel & Conference Centre",
+    "category": "Client websites",
+    "sector": "Hospitality · Hotel & conference services",
+    "summary": "IT Specialist & Assistant Manager: built the hotel website and operational systems, and managed its digital presence.",
+    "duties": [
+      "Worked as IT Specialist & Assistant Manager, combining practical technology work with hotel operations.",
+      "Designed and developed the full public hotel website at siliconhotelcc.com.",
+      "Managed the hotel's digital presence, website information and online content.",
+      "Built the restaurant service and operations dashboard for orders, breakfast service, sales and payment reporting.",
+      "Built the reception booking system for reservations, room availability, check-ins, check-outs and payment oversight.",
+      "Developed the staff attendance system and connected it to the fingerprint clock-in device.",
+      "Provided IT and digital-systems support for day-to-day hotel operations."
+    ],
+    "url": "https://www.siliconhotelcc.com/",
+    "color": "#a5d8eb",
+    "short": "One hotel. Connected operations."
+  },
+  {
+    "name": "Silicon Hotel — Restaurant System",
+    "category": "Web applications",
+    "sector": "Hospitality · Restaurant operations",
+    "summary": "A restaurant service and dashboard connecting orders, breakfast service, payments and daily reporting.",
+    "duties": [
+      "Built the restaurant service and staff operations dashboard.",
+      "Created workflows for website requests, open orders, service status and completed sales.",
+      "Built breakfast-service management for hotel operations.",
+      "Presented daily food and drink sales, delivery and room-service fees, discounts and net sales.",
+      "Separated cash, mobile money, card payments, room charges and unpaid balances in reporting."
+    ],
+    "color": "#c4e6ee",
+    "short": "From order to service."
+  },
+  {
+    "name": "Silicon Hotel — Reception Booking System",
+    "category": "Web applications",
+    "sector": "Hospitality · Reception & bookings",
+    "summary": "A reception booking system for reservations, room availability, arrivals, departures and payment oversight.",
+    "duties": [
+      "Built the reception booking and front-desk system.",
+      "Created booking, room-availability, check-in and check-out workflows.",
+      "Provided access to the room calendar, guest records and operational activity history.",
+      "Built revenue and payment views with reporting date ranges and outstanding balances.",
+      "Connected front-desk tasks with hotel service and payment information."
+    ],
+    "color": "#b7e5f1",
+    "short": "A clearer front desk."
+  },
+  {
+    "name": "Silicon Hotel — Attendance System",
+    "category": "Web applications",
+    "sector": "Hospitality · Staff attendance",
+    "summary": "A staff attendance platform connected to the hotel's fingerprint clock-in system.",
+    "duties": [
+      "Developed a staff attendance system for the hotel.",
+      "Connected the platform to the fingerprint attendance device.",
+      "Provided a dashboard for reviewing attendance records and clock-in information.",
+      "Added date sorting and search to help review staff attendance."
+    ],
+    "color": "#8dccdf",
+    "short": "From clock-in to a clear record."
+  },
+  {
     "name": "Dansoaa",
     "category": "Client websites",
     "sector": "Building materials",
@@ -317,6 +379,10 @@ export const services = [
       ]
     ],
     "projectNames": [
+      "Silicon Hotel & Conference Centre",
+      "Silicon Hotel — Restaurant System",
+      "Silicon Hotel — Reception Booking System",
+      "Silicon Hotel — Attendance System",
       "Junk Titanic",
       "Dansoaa",
       "Shai Cars",
@@ -334,7 +400,7 @@ export const services = [
       "CourseRep",
       "Accurate Edu"
     ],
-    "context": "A range of client websites and platform projects. Each entry describes my contribution and links to the website where available.",
+    "context": "Client websites and operational platforms across hospitality and other businesses. Silicon Hotel includes the public website, restaurant operations, reception bookings and fingerprint-connected attendance.",
     "process": [
       [
         "Understand",
@@ -388,9 +454,17 @@ export const services = [
       [
         "User guidance & technical communication",
         "Explain issues clearly, guide customers through the next steps and connect technical support with customer success."
+      ],
+      [
+        "Connected attendance systems",
+        "Build and connect attendance dashboards to fingerprint clock-in equipment, alongside practical support for business systems."
       ]
     ],
     "projectNames": [
+      "Silicon Hotel & Conference Centre",
+      "Silicon Hotel — Attendance System",
+      "Silicon Hotel — Restaurant System",
+      "Silicon Hotel — Reception Booking System",
       "Monic Home & Body Essentials",
       "Lynxx Kloset",
       "Pizza Republic",
@@ -517,6 +591,7 @@ export const services = [
       ]
     ],
     "projectNames": [
+      "Silicon Hotel & Conference Centre",
       "Currently Offline",
       "Junk Titanic",
       "Dansoaa",
@@ -524,7 +599,7 @@ export const services = [
       "Pretty Iris Aesthetics",
       "Pizza Republic"
     ],
-    "context": "Creative campaigns for Currently Offline in the US, a UK business website and search visibility work for Junk Titanic, and marketing and digital support across other client businesses.",
+    "context": "Creative campaigns for Currently Offline in the US, a UK business website and search visibility work for Junk Titanic, and marketing and digital support across other client businesses. Managed Silicon Hotel's digital presence, website and online content alongside the IT Specialist & Assistant Manager role.",
     "experience": {
       "name": "Versified Technology",
       "role": "Marketing Team Lead · Jan 2023–Present",
@@ -587,6 +662,10 @@ export const services = [
       ]
     ],
     "projectNames": [
+      "Silicon Hotel & Conference Centre",
+      "Silicon Hotel — Restaurant System",
+      "Silicon Hotel — Reception Booking System",
+      "Silicon Hotel — Attendance System",
       "Dansoaa",
       "Junk Titanic",
       "Monic Home & Body Essentials",
@@ -598,7 +677,7 @@ export const services = [
       "3an Company",
       "Chrisango Africa"
     ],
-    "context": "Product and service operations across business software, retail catalogues, client websites and creative delivery. Each example shows the work I handled for that business.",
+    "context": "Product and service operations across business software, retail catalogues, client websites and creative delivery. Each example shows the work I handled for that business. Silicon Hotel adds hands-on assistant management and the delivery of restaurant, reception and staff-attendance systems.",
     "experience": {
       "name": "Retill at Versified Technology",
       "role": "Product support, customer success & office operations",
